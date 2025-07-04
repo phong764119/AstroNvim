@@ -11,6 +11,9 @@ return {
   { import = "astrocommunity.utility.hover-nvim" },
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
   { import = "astrocommunity.editing-support.vim-visual-multi" },
+  { import = "astrocommunity.git.diffview-nvim" },
+  { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
+  { import = "astrocommunity.recipes.heirline-vscode-winbar" },
   -- { import = "astrocommunity.scrolling.mini-animate" },
   {
     "kdheepak/lazygit.nvim",
@@ -31,5 +34,11 @@ return {
     keys = {
       { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
     },
+  },
+  {
+    "nvzone/typr",
+    dependencies = "nvzone/volt",
+    opts = {},
+    cmd = { "Typr", "TyprStats" },
   },
 }

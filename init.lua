@@ -1,14 +1,14 @@
 -- save file
-vim.keymap.set('n', '<C-s>', ':w<CR>', { silent = true, desc = 'Save file' })
-vim.keymap.set('i', '<C-s>', '<Esc>:w<CR>', { silent = true, desc = 'Save file' })
+vim.keymap.set("n", "<C-s>", ":w<CR>", { silent = true, desc = "Save file" })
+vim.keymap.set("i", "<C-s>", "<Esc>:w<CR>", { silent = true, desc = "Save file" })
 
 -- change "$" to "-"
-vim.keymap.set('n', '-', '$', { desc = 'Move to end of line' })
-vim.keymap.set({ 'n', 'v', 'o' }, '-', '$', { desc = 'Go to end of line' })
-vim.keymap.set({ 'n', 'v', 'o' }, '$', '-', { desc = 'Go to previous line' })
+vim.keymap.set("n", "-", "$", { desc = "Move to end of line" })
+vim.keymap.set({ "n", "v", "o" }, "-", "$", { desc = "Go to end of line" })
+vim.keymap.set({ "n", "v", "o" }, "$", "-", { desc = "Go to previous line" })
 
 -- delete single character without copying into register
-vim.keymap.set('n', 'x', '"_x', { noremap = true, silent = true })
+vim.keymap.set("n", "x", '"_x', { noremap = true, silent = true })
 
 -- This file simply bootstraps the installation of Lazy.nvim and then calls other files for execution
 -- This file doesn't necessarily need to be touched, BE CAUTIOUS editing this file and proceed at your own risk.
