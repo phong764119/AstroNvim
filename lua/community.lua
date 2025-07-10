@@ -8,7 +8,7 @@ return {
   { import = "astrocommunity.pack.lua" },
   -- import/override with your plugins folder
   { import = "astrocommunity.diagnostics.trouble-nvim" },
-  { import = "astrocommunity.utility.hover-nvim" },
+  -- { import = "astrocommunity.utility.hover-nvim" },
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
   { import = "astrocommunity.editing-support.vim-visual-multi" },
   { import = "astrocommunity.git.diffview-nvim" },
@@ -40,5 +40,12 @@ return {
     dependencies = "nvzone/volt",
     opts = {},
     cmd = { "Typr", "TyprStats" },
+  },
+  { -- Adds git related signs to the gutter, as well as utilities for managing changes
+    "lewis6991/gitsigns.nvim",
+    opts = {
+      current_line_blame = true,
+      current_line_blame_formatter = "Git:<author>, <author_time:%R> - <summary>",
+    },
   },
 }
